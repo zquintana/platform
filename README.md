@@ -1,7 +1,7 @@
 Suitability Score Concept
 =========================
 
-[![CircleCI](https://circleci.com/gh/zquintana/platform/tree/master.svg?style=svg))](https://circleci.com/gh/zquintana/platform/tree/master)
+[![CircleCI](https://circleci.com/gh/zquintana/platform/tree/master.svg?style=svg)](https://circleci.com/gh/zquintana/platform/tree/master)
 
 Takes in a set of names and addresses to determine their suitability score.
 
