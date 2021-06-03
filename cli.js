@@ -14,7 +14,7 @@ const handler = async (argv) => {
     const addresses = (await readFile(argv.streetAddressFile));
 
     const values = inputScorer(addresses, names);
-    values.forEach(match => console.log(`${match.driver.name} -> ${match.address} (SS: ${match.driver.score})`));
+    values.forEach(match => console.log(`SS: ${match.driver.score} == ${match.address} -> ${match.driver.name}`));
 };
 
 yargs(hideBin(process.argv))
