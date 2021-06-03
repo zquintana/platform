@@ -11,7 +11,7 @@ const readFile = async (file) => {
 
 const handler = async (argv) => {
     const names = await readFile(argv.namesFile);
-    const addresses = (await readFile(argv.streetAddressFile));
+    const addresses = await readFile(argv.streetAddressFile);
 
     const values = inputScorer(addresses, names);
     values.forEach(match => console.log(`SS: ${match.driver.score} == ${match.address} -> ${match.driver.name}`));
